@@ -1,0 +1,40 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <title>HowManyFingers</title>
+    
+</head>
+<body>
+    <p>How many fingers are you holding up ?</p>
+    <select id = "num">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+    &nbsp;
+    <button id = "check">Verify</button>
+    <script type = "text/javascript">
+     document.getElementById("check").onclick = function() {
+         var x = document.getElementById("num").value;
+         var count = 0;
+         var y = 0;
+         while(y != x) {
+             y = Math.random();
+             y = y*6;
+             y = Math.floor(y);
+             count = count + 1; 
+         
+             
+
+         }
+         alert("the no of guesses taken were" + " " + count);
+     }
+    
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            variables
+
+        </title>
+
+    </head>
+    <body>
+        <input id = "inputText" type = "text">
+        <button id = "changeText">Change Text</button>
+        <p id = "text">This is some text</p>
+        <script type = "text/javascript">
+            document.getElementById("changeText").onclick = function(){
+                var x = "";
+                x = document.getElementById("inputText").value;
+                document.getElementById("text").innerHTML = x;
+            }
+
+
+        </script>
+
+    </body>
+</html>

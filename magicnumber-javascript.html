@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>
+            magicNumber
+        </title>
+    </head>
+    <body>
+        magic passcode: &nbsp;
+        <input type = "text" id = "password">
+        &nbsp;
+        <button id = "login">Log in</button>
+        <script type = "text/javascript">
+        document.getElementById("login").onclick = function() {
+            var x = document.getElementById("password").value;
+            
+            var y = "ritik";
+            if(x == y) {
+                alert("the magic passcode is correct");
+            }
+            else {
+                alert("try again");
+            }
+            
+        }
+        </script>
+       
+        
+    </body>
+</html>

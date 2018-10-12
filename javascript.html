@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>miniproject-javascript</title>
+        <style type = "text/css">
+        .square {
+            height: 100px;
+            width: 100px;
+            float: left;
+            margin: 10px;
+            border-radius: 50px;
+
+        }
+        #square-red {
+            background-color: red;
+
+        }
+        #square-blue {
+            background-color: blue;
+        }
+        #square-green {
+            background-color: green;
+        }
+       
+        
+        </style>
+    </head>
+    <body>
+        <div id = "square-red" class = "square"></div>
+        <div id = "square-blue" class = "square"></div>
+        <div id = "square-green" class = "square"></div>
+        <script type = "text/javascript">
+        document.getElementById("square-red").onclick = function() {
+            document.getElementById("square-red").style.display = "none";
+        }
+        document.getElementById("square-blue").onclick = function() {
+            document.getElementById("square-blue").style.display = "none";
+        }
+        document.getElementById("square-green").onclick = function() {
+            document.getElementById("square-green").style.display = "none";
+        }
+        </script>
+       
+    </body>
+    
+</html>
